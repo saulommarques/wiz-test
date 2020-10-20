@@ -16,12 +16,23 @@
             <input class="half" type="text" placeholder="Último nome" required formControlName="lastName">
             <input class="half" type="text" placeholder="CPF" required formControlName="cpf">
             <input class="half" type="text" placeholder="Data de nascimento" required formControlName="date">
-            <input class="full" type="email" placeholder="Email" required formControlName="email">
-            <label class="input-label" [ngClass]="{'checked': form.get('checkbox').isChecked}">
-              <input type="checkbox" formControlName="checkbox" id="companion">
-              Adicionar acompanhante
-            </label>
+            <input class="full" type="email" placeholder="Email" required formControlName="email">            
           </div>
+
+          <h3>Acompanhante 1</h3>
+
+          <div class="personal-data columns">
+            <input class="half" type="text" placeholder="Primeiro nome" required formControlName="firstName">
+            <input class="half" type="text" placeholder="Último nome" required formControlName="lastName">
+            <input class="half" type="text" placeholder="CPF" required formControlName="cpf">
+            <input class="half" type="text" placeholder="Data de nascimento" required formControlName="date">
+            <input class="full" type="email" placeholder="Email" required formControlName="email">
+          </div>
+
+          <label class="input-label">
+            <input type="checkbox" formControlName="checkbox" id="companion">
+            Adicionar acompanhante
+          </label>
   
           <h3>Dados da entrega</h3>
   

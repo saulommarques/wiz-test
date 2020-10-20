@@ -58,13 +58,14 @@ form {
     }
 
     label {
+        display: block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         color: #707070;
         line-height: 1.4;
         position: relative;
         padding-left: 40px;
-        margin-top: 10px;
+        margin: 10px 0 60px;
 
         &.input-label {
             cursor: pointer;
@@ -132,7 +133,7 @@ h3 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 55px;    
+    margin: 50px 0 40px;
 
     &.title-bar {
         display: flex;
@@ -140,6 +141,7 @@ h3 {
         height: 90px;
         background-color: #f1f1f1;
         padding-left: 30px;
+        margin-top: 0;
         position: relative;
         z-index: 2;
         
@@ -186,7 +188,7 @@ h3 {
 }
 
 .personal-data {
-    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .ticket-card {
