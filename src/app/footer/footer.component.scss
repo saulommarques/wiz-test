@@ -1,0 +1,119 @@
+.footer {
+    .container {
+        padding-top: 160px;
+        margin-top: 120px;
+        border-top: 1px solid #555;
+    }
+
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .column {
+            width: 24%;
+
+            &:first-child {
+                width: 28%;
+            }            
+        }
+    }
+
+    .logo {
+        display: block;
+        font-size: 0;
+    
+        a {
+            display: block;
+            margin: 0;
+            max-width: 250px;
+    
+            img {
+                display: block;            
+                height: 80px;
+            }
+        }
+        
+        + p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            color: #666;
+            line-height: 1.8;
+            text-decoration: none;
+            max-width: 340px;
+            margin-top: 55px;
+        }
+    }
+
+    h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 34px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        color: #1056ab;
+        margin: 20px 0 50px;
+    }
+
+    ul {
+        li {
+            margin-bottom: 14px;
+
+            a {
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                color: #565656;
+                line-height: 1.4;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .share {
+        margin-top: 30px;
+
+        h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: #ccc;
+            margin: 20px 0 30px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            max-width: 240px;
+
+            li {
+                a {
+                    display: block;
+                    font-size: 0;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 100%;
+                    background: #1056ab;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #555;
+        margin-top: 70px;
+        padding-bottom: 20px;
+        height: 140px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        color: #888;
+    }
+}
