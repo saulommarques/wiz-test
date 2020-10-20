@@ -32,6 +32,31 @@ form {
         }
     }
 
+    select {
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: url("../../assets/form/bg-arrow.png") no-repeat right 15px center / auto 10px;
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 1px;
+            background-color: #b2b2b2;
+            height: 80%;
+            position: absolute;
+            right: 50px;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+
     label {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
