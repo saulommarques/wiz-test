@@ -12,7 +12,7 @@ form {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         color: #707070;
-        padding: 0 30px;
+        padding: 0 30px;        
 
         &:focus {
             outline: #b5b5b5;
@@ -33,6 +33,7 @@ form {
     }
 
     select {
+        color: #b5b5b5;
         outline: none;
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -83,6 +84,19 @@ form {
                 top: 4px;
             }
 
+            &:after {
+                display: none;
+                content: "";
+                box-sizing: border-box;
+                width: 18px;
+                height: 16px;                
+                position: absolute;
+                left: 1px;
+                top: 6px;
+                background: url("../../assets/form/bg-checked.svg") no-repeat center center / contain;
+                z-index: 1;
+            }
+
             input[type="checkbox"],
             input[type="radio"] {
                 visibility: hidden;
@@ -92,6 +106,12 @@ form {
                 width: 0;
                 position: absolute;
                 left: 0;
+            }
+
+            &.active {
+                &:after {
+                    display: block;
+                }
             }
         }
     }

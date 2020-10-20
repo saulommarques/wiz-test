@@ -29,7 +29,7 @@
             <input class="full" type="email" placeholder="Email" required formControlName="email">
           </div>
 
-          <label class="input-label">
+          <label class="input-label" [ngClass]="{'active': form.get('checkbox').value}">
             <input type="checkbox" formControlName="checkbox" id="companion">
             Adicionar acompanhante
           </label>
