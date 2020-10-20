@@ -155,3 +155,93 @@ h3 {
         z-index: 1;
     }
 }
+
+.ticket-wrap {
+    width: 35%;
+}
+
+.personal-data {
+    margin-bottom: 100px;
+}
+
+.ticket-card {
+    margin-left: 30px;
+}
+
+.movie-wrap {
+    display: flex;
+    
+    .info {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        p,
+        span,
+        strong {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding-right: 30px;
+            color: #262626;
+            margin: 0 0 2px;
+            line-height: 1.6;
+        }
+
+        p {
+            text-transform: uppercase;
+
+            strong {
+                text-transform: none;
+            }
+
+            &:last-child {
+                margin-top: 15px;
+                
+                strong {
+                    color: #1056ab;
+                }
+            }
+        }
+    }
+}
+
+.total-price-wrap {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: thin solid #b2b2b2;
+
+    ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+
+            strong
+            ,span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+                color: #262626;
+                margin-bottom: 12px;
+            }
+
+            span {
+                color: #b5b5b5;
+            }
+
+            &.total {
+                margin-top: 32px;
+
+                strong,
+                span {
+                    font-weight: bold;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    color: #1056ab;
+                }
+            }
+        }
+    }
+}
