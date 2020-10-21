@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'form-app',
   templateUrl: './form.component.html',
   styleUrls: ['./../app.component.scss', './form.component.scss']
 })
+
 export class FormComponent {
   title = 'wiz-test';
   movie = '';
@@ -54,5 +54,17 @@ export class FormComponent {
         this.form.get('tel').setValue(result["ddd"]);
       });
     }
+  }
+
+  onSubmit() {
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/json');
+    headers = headers.set('Authorization', 'Basic #ASDFGW#ERWQERTRYT#%$%$@#$%==');
+
+    const options = {headers: headers};
+
+    this.http.post('http://localhost/reserva', this.form.value, options).subscribe((res) => {
+
+    });
   }
 }

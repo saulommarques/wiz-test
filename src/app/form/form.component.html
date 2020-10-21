@@ -19,9 +19,9 @@
             <input class="full" type="email" placeholder="Email" required formControlName="email">            
           </div>
           
-          <h3 class="companion-title" [ngClass]="{'active': form.get('checkbox').value}">Acompanhante 1</h3>
+          <h3 class="companion-title" *ngIf="form.get('checkbox').value">Acompanhante 1</h3>
 
-          <div class="personal-data personal-data-companion columns" [ngClass]="{'active': form.get('checkbox').value}">            
+          <div class="personal-data personal-data-companion columns" *ngIf="form.get('checkbox').value">            
             <input class="half" type="text" placeholder="Primeiro nome" required formControlName="firstNameCompanion">
             <input class="half" type="text" placeholder="Último nome" required formControlName="lastNameCompanion">
             <input class="half" type="text" placeholder="CPF" required formControlName="cpfCompanion" mask="000.000.000-00">
