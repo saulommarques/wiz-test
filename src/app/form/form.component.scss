@@ -38,7 +38,7 @@ form {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background: url("../../assets/form/bg-arrow.png") no-repeat right 15px center / auto 10px;
+        background: url("../../assets/images/form/bg-arrow.png") no-repeat right 15px center / auto 10px;
 
         &::-ms-expand {
             display: none;
@@ -93,7 +93,7 @@ form {
                 position: absolute;
                 left: 1px;
                 top: 6px;
-                background: url("../../assets/form/bg-checked.svg") no-repeat center center / contain;
+                background: url("../../assets/images/form/bg-checked.svg") no-repeat center center / contain;
                 z-index: 1;
             }
 
