@@ -10,7 +10,7 @@
 
         <h3 class="title-bar first">Dados pessoais</h3>
   
-        <form [formGroup]="form" [ngClass]="{'valid': form.get('firstName').valid}">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <div class="personal-data columns">
             <input class="half" type="text" placeholder="Primeiro nome" required formControlName="firstName">
             <input class="half" type="text" placeholder="Último nome" required formControlName="lastName">
@@ -18,10 +18,10 @@
             <input class="half" type="text" placeholder="Data de nascimento" required formControlName="date" mask="00/00/0000">
             <input class="full" type="email" placeholder="Email" required formControlName="email">            
           </div>
+          
+          <h3 class="companion-title" [ngClass]="{'active': form.get('checkbox').value}">Acompanhante 1</h3>
 
-          <h3>Acompanhante 1</h3>
-
-          <div class="personal-data columns">
+          <div class="personal-data personal-data-companion columns" [ngClass]="{'active': form.get('checkbox').value}">            
             <input class="half" type="text" placeholder="Primeiro nome" required formControlName="firstNameCompanion">
             <input class="half" type="text" placeholder="Último nome" required formControlName="lastNameCompanion">
             <input class="half" type="text" placeholder="CPF" required formControlName="cpfCompanion" mask="000.000.000-00">
@@ -248,7 +248,7 @@
             <input class="full" type="tel" placeholder="Telefone" required formControlName="tel" mask="(00) 00000-0000">
           </div>
   
-          <button class="submit" type="submit">Enviar</button>
+          <button class="submit" type="submit" [disabled]="form.invalid">Enviar</button>
   
         </form>
   

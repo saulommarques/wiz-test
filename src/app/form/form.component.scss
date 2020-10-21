@@ -137,6 +137,12 @@ form {
         &:focus {
             outline: none;
         }
+
+        &:disabled {
+            cursor: default;
+            opacity: 0.6;
+            background: #999;
+        }
     }
 }
 
@@ -208,7 +214,16 @@ h3 {
 }
 
 .personal-data {
-    margin-top: 50px;
+    margin-top: 50px;    
+}
+
+.personal-data-companion,
+.companion-title {
+    display: none;
+    
+    &.active {
+        display: flex;
+    }
 }
 
 .ticket-card {
