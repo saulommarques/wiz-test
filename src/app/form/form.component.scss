@@ -292,3 +292,126 @@ h3 {
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    form {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            height: 50px;
+            margin-bottom: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 0 20px;
+    
+            &.half,
+            &.full {
+                width: 100%;
+            }
+        }
+    
+        label {
+            font-size: 18px;            
+            padding-left: 30px;
+            margin: 10px 0 40px;
+    
+            &.input-label {
+                &:before {
+                    top: 1px;
+                }
+                
+                &:after {
+                    top: 3px;
+                }
+            }
+        }
+    
+        .submit {
+            float: none;
+            width: 280px;
+            height: 60px;
+            margin: 0px auto 40px;            
+            font-size: 18px;            
+        }
+    }
+    
+    h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 20px;        
+        margin: 30px 0 20px;
+    
+        &.title-bar {
+            height: 60px;            
+            padding-left: 20px;
+            margin-left: -20px;       
+            margin-right: -20px;       
+            
+            &.first {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .columns {
+        flex-direction: column;
+    }
+    
+    .data-wrap {
+        width: 100%;
+    
+        &:after {
+            display: none;
+        }
+    }
+    
+    .ticket-wrap {
+        width: 100%;
+    }
+    
+    .personal-data {
+        margin-top: 0;
+    }
+
+    .ticket-card {
+        margin-left: 0;
+    }
+    
+    .movie-wrap {
+        .info {
+            margin-left: 20px;            
+            
+            p,
+            span,
+            strong {
+                font-size: 18px;
+                padding-right: 10px;                
+            }            
+        }
+    }
+    
+    .total-price-wrap {
+        ul {
+            li {
+                strong
+                ,span {
+                    font-size: 20px;                    
+                }
+    
+                &.total {
+                    strong,
+                    span {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

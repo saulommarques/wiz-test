@@ -5,13 +5,30 @@ header {
         a {
             display: block;
             margin: 120px auto 140px;
-            max-width: 460px;
+            max-width: 470px;
     
             img {
-                display: block;            
-                height: 150px;
+                display: block;
+                width: 100%;
+                max-width: 100%;
             }
         }
     }
     
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        h1 {
+            a {
+                margin: 60px auto;
+                max-width: 320px;
+        
+                img {
+                    max-width: 320px;
+                }
+            }
+        }
+        
+    }
 }
